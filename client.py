@@ -92,7 +92,7 @@ def animate_images(label, img1, img2, speaking):
     # Reset to the default image when done.
     label.config(image=img1)
 
-def goofy_tts(text, label, img1, img2, voice_index=0, lang="en", use_gtts=False):
+def goofy_tts(text, label=label, img1=img1, img2=img2, voice_index=0, lang="en", use_gtts=False):
     """Start animation and TTS in separate threads."""
     speaking = [True]
     threading.Thread(target=animate_images, args=(label, img1, img2, speaking), daemon=True).start()
