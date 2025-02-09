@@ -180,7 +180,7 @@ def startGame():
         startGame()  # Restart the game
     else:
         start_gui("thank you for playing")
-        time.sleep(1)
+        time.sleep(2)
         root.quit()
         sys.exit(0)
 
